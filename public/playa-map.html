@@ -417,11 +417,10 @@ nav {
   <span class="nav-phase">GROUND VIEW</span>
   <div class="nav-live-dot"></div>
   <div class="nav-spacer"></div>
-  <a class="nav-link" href="playa.html">Cosmic View</a>
-  <a class="nav-link active" href="playa-map.html">Ground View</a>
-  <a class="nav-link" href="index.html">Galaxy</a>
-  <a class="nav-link nav-link-key" href="http://localhost:5173/book" target="_blank">↗ Book</a>
-  <a class="nav-link" href="http://localhost:5173/hotel" target="_blank">↗ Hotel Portal</a>
+  <a class="nav-link active" href="/playa-map.html">Ground View</a>
+  <a class="nav-link" href="/playa.html">Cosmic View</a>
+  <a class="nav-link nav-link-key" href="/book">↗ Book</a>
+  <a class="nav-link" href="/hotel">↗ Hotel Portal</a>
   <button id="filter-toggle-btn" onclick="toggleFilterPanel()" aria-label="Toggle filters">⊞</button>
 </nav>
 
@@ -531,7 +530,7 @@ const PLACES = [
     region:'Playa del Carmen Norte', sector:'Federal Maritime Zone · PDC Beach Norte',
     desc:'4.5 hectares of lowland tropical forest between Hotel Coco Beach and Beach 88 Norte. The last coastal jungle of Playa del Carmen. Every registered tree is a GeoSpatialNFT. Every guide session is transcribed into the living forest record.',
     localStats:{ trees:847, species:94, co2:312, hours:2840, karma:45200, visitors:412 },
-    link:'http://localhost:5173/book',
+    link:'/book',
     features:'STAR OAPP,GeoSpatialNFT,Chapter System,Conversation Capture,Carbon Credits,PGT Timebank,Conservation Passport,PrivacyMage Trust Graph'
   },
 
@@ -545,7 +544,7 @@ const PLACES = [
     gm:{ name:'Ankara Angulo', title:'General Manager' },
     googleMaps:'https://maps.google.com/?q=Hyatt+Centric+Playa+del+Carmen',
     localStats:{ karma:18450, avatars:87, trees:12, co2:6.2, rank:1, tier:'Champion' },
-    link:'http://localhost:5173/hotel'
+    link:'/hotel'
   },
 
   { id:'elements', name:'The Elements', shortName:'Elements', type:'hotel_champion',
@@ -557,7 +556,7 @@ const PLACES = [
     gm:{ name:'TBC', title:'Hotel Manager' },
     googleMaps:'https://maps.google.com/?q=The+Elements+Playa+del+Carmen+Calle+46',
     localStats:{ karma:0, avatars:0, trees:0, co2:0, rank:0, tier:'Champion · Prospective' },
-    link:'http://localhost:5173/hotel',
+    link:'/hotel',
     pvNeighbour: true
   },
 
@@ -570,7 +569,7 @@ const PLACES = [
     gm:{ name:'Paul Wood', title:'General Manager' },
     googleMaps:'https://maps.google.com/?q=Grand+Hyatt+Playa+del+Carmen',
     localStats:{ karma:12840, avatars:54, trees:4, co2:2.1, rank:3, tier:'Champion' },
-    link:'http://localhost:5173/hotel'
+    link:'/hotel'
   },
 
   { id:'viceroy', name:'Viceroy Riviera Maya', shortName:'Viceroy', type:'hotel_champion',
@@ -582,7 +581,7 @@ const PLACES = [
     gm:{ name:'TBC', title:'General Manager' },
     googleMaps:'https://maps.google.com/?q=Viceroy+Riviera+Maya+Xcalacoco',
     localStats:{ karma:14200, avatars:62, trees:8, co2:3.9, rank:2, tier:'Champion' },
-    link:'http://localhost:5173/hotel'
+    link:'/hotel'
   },
 
   // ── PARTNER HOTELS ──────────────────────────────────────────────────────────
@@ -1098,7 +1097,7 @@ function renderInfoPanel(place) {
     }
     html += `<div class="ip-links-row">
       <a class="ip-link-btn ip-link-green" href="${esc(place.link||'#')}" target="_blank">↗ Book a Visit</a>
-      <a class="ip-link-btn ip-link-gold"  href="http://localhost:5173/passport" target="_blank">↗ My Passport</a>
+      <a class="ip-link-btn ip-link-gold"  href="/passport" target="_blank">↗ My Passport</a>
       <button class="ip-link-btn ip-link-muted" onclick="openModal('${place.id}')">Full Record</button>
     </div>
     <button id="pv-edit-btn" class="ip-link-btn" onclick="togglePVEdit()"

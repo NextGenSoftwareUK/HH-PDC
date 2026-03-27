@@ -9,7 +9,7 @@ export default function App() {
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route path="/" element={<Navigate to="/book" replace />} />
+        <Route path="/" element={<Navigate to="/playa-map.html" replace />} />
         <Route path="/book/*" element={<BookingPortal />} />
         <Route path="/passport/*" element={<PassportPortal />} />
         <Route path="/hotel/*" element={<HotelDashboard />} />
