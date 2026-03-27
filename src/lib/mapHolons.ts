@@ -29,7 +29,6 @@ import {
   saveHolon,
   loadHolon,
   type OASISHolon,
-  NULL_GUID,
 } from './oasisClient'
 
 // ── Map Place → Holon definition ──────────────────────────────────────────────
