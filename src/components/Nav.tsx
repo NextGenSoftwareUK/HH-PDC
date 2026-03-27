@@ -56,6 +56,7 @@ export function Nav() {
         <span className="font-display italic text-jungle-200 text-lg">Pulmón Verde</span>
       </div>
       <div className="flex items-center gap-4 text-sm">
+        <Link to="/quest" className="text-jungle-400 hover:text-jungle-200 transition-colors">My Quest</Link>
         <Link to="/hotel" className="text-jungle-400 hover:text-jungle-200 transition-colors">Hotel Partners</Link>
         <Link to="/passport" className="text-jungle-400 hover:text-jungle-200 transition-colors">My Passport</Link>
       </div>
