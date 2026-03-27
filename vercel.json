@@ -1,5 +1,8 @@
 {
+  "redirects": [
+    { "source": "/", "destination": "/playa-map.html", "permanent": false }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!playa-map\\.html|playa\\.html).*)", "destination": "/index.html" }
   ]
 }
