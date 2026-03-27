@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-jungle-900 text-jungle-100;
+  }
+  body {
+    @apply font-body antialiased;
+  }
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-jungle-700 border border-jungle-600 rounded-xl p-5;
+  }
+  .card-light {
+    @apply bg-white border border-gray-200 rounded-xl p-5 shadow-sm;
+  }
+  .btn-primary {
+    @apply bg-jungle-400 hover:bg-jungle-300 text-jungle-900 font-medium px-6 py-3 rounded-lg transition-all duration-200;
+  }
+  .btn-secondary {
+    @apply border border-jungle-400 text-jungle-300 hover:bg-jungle-700 px-6 py-3 rounded-lg transition-all duration-200;
+  }
+  .btn-gold {
+    @apply bg-gold-500 hover:bg-gold-400 text-jungle-900 font-medium px-6 py-3 rounded-lg transition-all duration-200;
+  }
+  .label {
+    @apply text-xs font-medium uppercase tracking-widest text-jungle-300;
+  }
+  .label-dark {
+    @apply text-xs font-medium uppercase tracking-widest text-gray-400;
+  }
+  .stat-card {
+    @apply card flex flex-col gap-1;
+  }
+  .chapter-locked {
+    @apply opacity-40 cursor-not-allowed;
+  }
+}
+
+/* Leaflet map */
+.leaflet-container {
+  @apply rounded-xl;
+  font-family: inherit;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { @apply bg-jungle-900; }
+::-webkit-scrollbar-thumb { @apply bg-jungle-500 rounded-full; }
